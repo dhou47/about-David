@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+.galaxy-draw-board {
+  z-index: 0;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}

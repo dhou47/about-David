@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  /* border-bottom: 1px solid white; */
+}
+
+h4 {
+  text-align: center;
+}
+
+.nav-bar {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.carousal {
+  display: flex;
+  justify-content: center;
+}

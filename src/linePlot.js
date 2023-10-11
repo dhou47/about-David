@@ -52,7 +52,6 @@ export default function LinePlot({
       />
       <g fill="white" stroke="currentColor" strokeWidth="1.5">
         {" "}
-        // Changed from stroke-width to strokeWidth
         {data.map((d, i) => (
           <circle key={i} cx={x(i)} cy={y(d)} r="2.5" />
         ))}
