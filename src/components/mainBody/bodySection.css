@@ -1,0 +1,96 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.self-intro {
+  margin-top: 10.3rem;
+  width: 70%;
+  font-family: cursive;
+  padding-bottom: 3rem;
+  /* border-bottom: 3px solid white; */
+}
+
+.body-section {
+  margin-top: 5rem;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* background-color: steelblue; */
+}
+
+.body-section::after {
+  background-color: white;
+  content: "";
+  position: absolute;
+  left: calc(50% - 2px);
+  width: 4px;
+  height: 100%;
+}
+
+.body-section img {
+  display: inline;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.earth-pic {
+  position: absolute;
+}
+
+.timeline-item {
+  width: 30%;
+  padding: 1rem;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  border: 2px solid saddlebrown;
+  color: #d7c8da;
+  font-size: 1.5rem;
+}
+
+.timeline-item p {
+  width: fit-content;
+  font-size: 1rem;
+}
+
+.timeline-item:nth-child(even) {
+  margin-left: 3rem;
+}
+
+.timeline-item:nth-child(odd) {
+  margin-right: 3rem;
+  align-self: flex-end;
+  justify-content: flex-start;
+}
+
+.timeline-item-title.left {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.timeline-item-title.right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeline-item .circle {
+  visibility: hidden;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 3px solid rgb(132, 2, 2);
+  border-radius: 50%;
+  top: calc(50% - 10px);
+  z-index: 100;
+  margin-left: 50vw;
+  margin-right: 50vw;
+}
