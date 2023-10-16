@@ -8,7 +8,7 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(true);
   setTimeout(() => {
     setIsLoading(false);
-  }, 4000);
+  }, 3000);
   return isLoading ? (
     <video width="100%" height="100%" autoPlay muted>
       <source src="/assets/loading.mov" type="video/mp4" />
