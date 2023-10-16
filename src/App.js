@@ -1,17 +1,20 @@
 import Background from "./components/starBackground/background";
 import NavigationSection from "./components/navigation/navigationSection";
 import BodySection from "./components/mainBody/bodySection";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
+
   setTimeout(() => {
     setIsLoading(false);
   }, 3000);
+
   return isLoading ? (
     <video width="100%" height="100%" autoPlay muted>
-      <source src="/assets/loading.mov" type="video/mp4" />
+      <source src={`/assets/loading_6s.mp4`} type="video/mp4" />
+      Your browser does not support the video tag.
     </video>
   ) : (
     <div
