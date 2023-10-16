@@ -8,7 +8,13 @@ import "react-vertical-timeline-component/style.min.css";
 import { IoIosSchool } from "react-icons/io";
 import { MdWorkHistory } from "react-icons/md";
 import { GiBookAura } from "react-icons/gi";
-import { BsStars } from "react-icons/bs";
+import {
+  BsStars,
+  BsGithub,
+  BsLinkedin,
+  BsInstagram,
+  BsFacebook,
+} from "react-icons/bs";
 import starSky from "./staticStarSky.png";
 const BodySection = () => {
   return (
@@ -53,6 +59,16 @@ const BodySection = () => {
             Undergraduate Student
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Davis, CA</h4>
+          <img
+            src="/assets/ucdLogo.png"
+            alt="ucdavis logo"
+            style={{
+              position: "absolute",
+              width: "3rem",
+              top: "2rem",
+              right: "2rem",
+            }}
+          />
           <p>
             Enrolled in undergraduate program in University of California, Davis
           </p>
@@ -70,6 +86,16 @@ const BodySection = () => {
           <h4 className="vertical-timeline-element-subtitle">
             Harbin, Heilongjiang, China
           </h4>
+          <img
+            src="/assets/chinaEverbrightBankLogo.png"
+            alt="china EverBrightBank logo"
+            style={{
+              position: "absolute",
+              width: "3rem",
+              top: "2rem",
+              right: "2rem",
+            }}
+          />
           <p>
             As a software development intern in China EverBright Bank,
             Heilongjiang Branch, my main responsibility was to create webpage,
@@ -90,11 +116,22 @@ const BodySection = () => {
           <h4 className="vertical-timeline-element-subtitle">
             Harbin, Heilongjiang, China
           </h4>
+          <img
+            src="/assets/chinaEverbrightBankLogo.png"
+            alt="china EverBrightBank logo"
+            style={{
+              position: "absolute",
+              width: "3rem",
+              top: "2rem",
+              right: "2rem",
+            }}
+          />
           <p>
-            As a software development intern in China EverBright Bank,
-            Heilongjiang Branch, my main responsibility was to create webpage,
-            style CSS, code Javascript. Assist the development team to test as a
-            user to make sure the code flow works well.
+            As a Software Development Intern at China Everbright Bank, I focused
+            on frontend development utilizing React to enhance and optimize the
+            bank's web applications. I was integral in a team of seasoned
+            developers, where I not only honed my technical skills but also
+            contributed to designing intuitive and responsive user interfaces.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -109,6 +146,16 @@ const BodySection = () => {
             Bachelor Degree earned
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Davis, CA</h4>
+          <img
+            src="/assets/ucdLogo.png"
+            alt="ucdavis logo"
+            style={{
+              position: "absolute",
+              width: "3rem",
+              top: "2rem",
+              right: "2rem",
+            }}
+          />
           <p>Graduated from University of California, Davis.</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -122,8 +169,19 @@ const BodySection = () => {
             Frontend Developer
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Austin, Texas</h4>
+          <img
+            src="/assets/uscLogo.png"
+            alt="United Software corporation logo"
+            style={{
+              position: "absolute",
+              width: "3rem",
+              top: "2rem",
+              right: "2rem",
+            }}
+          />
           <p>
-            Developed a frontend interface for a company inventory management
+            Working as a frontend developer in United Software Corporation, I
+            developed a frontend interface for a company inventory management
             system including implement and designing web page: Profile, Invoice,
             Order, and Invoice. Integrated user and inventory data using
             React.js and MongoDB.
@@ -135,7 +193,26 @@ const BodySection = () => {
         />
       </VerticalTimeline>
 
-      <div className="footer-section"></div>
+      <div className="footer-section">
+        <h4>feel free to contact me!</h4>
+        <div className="footer-logo-section">
+          <a href="https://github.com/dhou47">
+            <BsGithub />
+          </a>
+          <a href="https://www.linkedin.com/in/daiwei-hou-a24446203/">
+            <BsLinkedin />
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100016905728915">
+            <BsFacebook />
+          </a>
+          <a href="https://www.instagram.com/davidhouuidev/">
+            <BsInstagram />
+          </a>
+        </div>
+        <div className="footer-text-section">
+          <p>{"dhou@ucdavis.edu | 530-219-2018"}</p>
+        </div>
+      </div>
     </div>
   );
 };

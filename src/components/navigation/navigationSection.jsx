@@ -4,7 +4,7 @@ import React, { useRef, Suspense, useEffect, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useThree } from "@react-three/fiber";
 
-function Box(props) {
+const Box = React.memo((props) => {
   const meshRef = useRef();
   const { scene } = useThree();
   const [isDragging, setIsDragging] = useState(false);
@@ -50,7 +50,7 @@ function Box(props) {
   ];
 
   const materials = textures.map(
-    (texture) => new THREE.MeshBasicMaterial({ map: texture })
+    (texture) => new THREE.MeshLambertMaterial({ map: texture })
   );
 
   useFrame((state, delta) => {
@@ -88,7 +88,7 @@ function Box(props) {
       <boxBufferGeometry attach="geometry" />
     </mesh>
   );
-}
+});
 
 const NavigationSection = () => {
   const [showText1, setShowText1] = useState(false);
@@ -96,6 +96,7 @@ const NavigationSection = () => {
 
   return (
     <div className="nav-bar">
+      <span className="contact-info">dhou@ucdavis.edu | 530-219-2018</span>
       <img
         className="satellite-pic"
         src="/assets/satellite.png"
@@ -105,7 +106,7 @@ const NavigationSection = () => {
       />
       <div className="titles">
         <h2>💫Daiwei Hou</h2>
-        <h4> Frontend Developer | dhou@ucdavis.edu | (530)-219-2018 </h4>
+        <h4> Frontend Developer | React Developer</h4>
       </div>
 
       <div className="cube-canvas">
@@ -134,7 +135,7 @@ const NavigationSection = () => {
         </ul>
         <Canvas>
           <ambientLight />
-          <pointLight position={[10, 10, 10]} />
+          <pointLight intensity={3} position={[10, 10, 10]} color="red" />
           <Suspense fallback={null}>
             <Box
               onSetVisibible={setShowText1}

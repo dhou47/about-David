@@ -32,3 +32,20 @@
 .earth-pic {
   position: absolute;
 }
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.footer-logo-section {
+  margin-top: 1rem;
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+}

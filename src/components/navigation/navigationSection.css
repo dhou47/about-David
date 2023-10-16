@@ -11,6 +11,14 @@
   width: 100%;
 }
 
+.contact-info {
+  position: absolute;
+  margin-top: 3rem;
+  margin: 3rem;
+  top: 0;
+  right: 0;
+}
+
 .satellite-pic {
   align-self: flex-start;
   position: sticky;
