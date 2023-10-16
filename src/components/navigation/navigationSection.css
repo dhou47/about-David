@@ -15,7 +15,7 @@
   align-self: flex-start;
   position: sticky;
   z-index: 0;
-  top: 0;
+  top: 3rem;
   left: 0;
 }
 
@@ -55,11 +55,11 @@ h4 {
 }
 
 .skillset-left {
-  border: 10px outset #1e0124;
+  border: 10px outset #fff;
   border-radius: 120px /10px;
 }
 
 .skillset-right {
-  border: 10px inset #1e0124;
+  border: 10px inset #fff;
   border-radius: 10px / 120px;
 }
